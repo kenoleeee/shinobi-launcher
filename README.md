@@ -5,6 +5,10 @@
 <h1 align="center">Shinobi Launcher</h1>
 
 <p align="center">
+  <b>English</b> · <a href="README.es.md">Español</a> · <a href="README.pt-BR.md">Português</a> · <a href="README.de.md">Deutsch</a> · <a href="README.ru.md">Русский</a>
+</p>
+
+<p align="center">
   <b>Play Naruto Online on your Mac.</b><br>
   An unofficial, free and open-source macOS launcher for the Flash MMO <i>Naruto Online</i> —
   with the real Adobe Flash Player, one-click start and quality-of-life extras.
