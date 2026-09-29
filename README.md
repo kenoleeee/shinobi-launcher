@@ -161,10 +161,13 @@ build/               app icon
 Shinobi Launcher is free and always will be. If it brought Naruto Online back to your Mac, you can
 support its development:
 
-<!-- Fill in before publishing, and in src/config.js → donate:
-- ☕ Buy Me a Coffee: https://buymeacoffee.com/…
-- 🪙 USDT (TRC-20): `…`
--->
+| Coin | Address |
+|---|---|
+| **ETH / ERC-20** (USDT, USDC) | `0x92277bbeb48218dee7e6fc1248a1cfa768d83850` |
+| **BTC** | `1Nsq5PtU8YueBTxpRWXo1BUvihyaRLuaG4` |
+
+⚠️ Send ERC-20 tokens **only on the Ethereum network** to the ETH address, and only BTC to the BTC address.
+You can also find these addresses in the app under **Help → Support the Project**.
 
 A ⭐ on GitHub helps too!
 

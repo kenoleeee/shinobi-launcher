@@ -11,8 +11,8 @@ module.exports = {
   donate: {
     buyMeACoffee: '', // e.g. 'https://buymeacoffee.com/yourname'
     crypto: [
-      // { name: 'USDT (TRC-20)', address: '...' },
-      // { name: 'BTC', address: '...' },
+      { name: 'ETH / ERC-20 (USDT, USDC)', address: '0x92277bbeb48218dee7e6fc1248a1cfa768d83850' },
+      { name: 'BTC', address: '1Nsq5PtU8YueBTxpRWXo1BUvihyaRLuaG4' },
     ],
   },
 };

@@ -35,4 +35,7 @@ websites, and it doesn't change or automate the game in any way.
 
 It's an unofficial fan project, not affiliated with Oasis Games, Tencent or Bandai Namco.
 
-Bugs or ideas? Post here or open an issue on GitHub. Have fun! 🍥
+Bugs or ideas? Post here or open an issue on GitHub. If you'd like to support the project, the
+donation addresses are in the README and under *Help → Support the Project* in the app.
+
+Have fun! 🍥
