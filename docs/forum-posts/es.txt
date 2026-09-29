@@ -1,0 +1,17 @@
+TÍTULO: Cómo jugar a Naruto Online en Mac (M1/M2/M3/M4 e Intel), método que funciona
+
+¡Hola a todos!
+
+Muchos ya no podemos jugar en Mac: los navegadores ya no admiten Flash y el mini-cliente oficial solo existe para Windows.
+
+He hecho una app gratuita que lo soluciona: Shinobi Launcher. Abre el juego oficial con el Adobe Flash Player de verdad, igual que el cliente de Windows. No modifica el juego de ninguna manera.
+
+Cómo instalarlo:
+1. Descarga el archivo .dmg aquí: https://github.com/kenoleeee/shinobi-launcher/releases/latest
+2. Arrastra Shinobi Launcher a la carpeta Aplicaciones.
+3. La primera vez que lo abras, ve a Ajustes del Sistema > Privacidad y seguridad y pulsa "Abrir igualmente".
+4. En el primer inicio la app descarga el Flash oficial de Adobe (más o menos 1 minuto). Después, inicia sesión y a jugar.
+
+Funciona en macOS 11 o posterior. La app es gratuita y de código abierto.
+
+Si algo no funciona, responde aquí y te ayudo. ¡Que lo disfrutéis!
