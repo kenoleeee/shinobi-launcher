@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffa22e"/>
+      <stop offset="0.55" stop-color="#ff6a13"/>
+      <stop offset="1" stop-color="#d9360b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.28" r="0.6">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff3c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3350"/>
+      <stop offset="1" stop-color="#141a2e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f7fb"/>
+      <stop offset="0.5" stop-color="#b9c3cf"/>
+      <stop offset="1" stop-color="#8793a3"/>
+    </linearGradient>
+    <linearGradient id="star" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a5566"/>
+      <stop offset="1" stop-color="#1f2733"/>
+    </linearGradient>
+    <clipPath id="squircle">
+      <rect x="100" y="100" width="824" height="824" rx="185" ry="185"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#bg)"/>
+    <rect x="100" y="100" width="824" height="824" fill="url(#glow)"/>
+    <!-- swirl rings in the background -->
+    <g fill="none" stroke="#fff" stroke-opacity="0.13" stroke-width="22">
+      <circle cx="512" cy="512" r="300"/>
+      <circle cx="512" cy="512" r="380"/>
+    </g>
+    <!-- headband cloth with trailing tails -->
+    <path d="M100 448 L924 400 L924 610 L100 658 Z" fill="url(#cloth)"/>
+    <path d="M760 560 C 840 640 880 720 930 800 L 900 820 C 850 740 800 680 740 610 Z" fill="#1b2238"/>
+    <!-- metal plate -->
+    <rect x="292" y="392" width="440" height="250" rx="34" fill="#0d1220" opacity="0.35" transform="translate(0 16)"/>
+    <rect x="292" y="392" width="440" height="250" rx="34" fill="url(#metal)" stroke="#6b7686" stroke-width="8"/>
+    <circle cx="330" cy="430" r="11" fill="#6b7686"/><circle cx="694" cy="430" r="11" fill="#6b7686"/>
+    <circle cx="330" cy="604" r="11" fill="#6b7686"/><circle cx="694" cy="604" r="11" fill="#6b7686"/>
+    <!-- engraved four-point shuriken -->
+    <g transform="translate(512 517) rotate(12)">
+      <path d="M0 -118 L26 -26 L118 0 L26 26 L0 118 L-26 26 L-118 0 L-26 -26 Z" fill="url(#star)"/>
+      <circle r="24" fill="#c9d1db"/>
+      <circle r="11" fill="#2b3442"/>
+    </g>
+  </g>
+</svg>

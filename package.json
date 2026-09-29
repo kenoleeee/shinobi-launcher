@@ -1,0 +1,37 @@
+{
+  "name": "shinobi-launcher",
+  "productName": "Shinobi Launcher",
+  "version": "1.0.0",
+  "description": "Unofficial macOS launcher for Naruto Online — play the Flash MMO on your Mac with the real Flash Player.",
+  "main": "src/main.js",
+  "private": true,
+  "author": "kenoleeee",
+  "license": "MIT",
+  "homepage": "https://github.com/kenoleeee/shinobi-launcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenoleeee/shinobi-launcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenoleeee/shinobi-launcher/issues"
+  },
+  "keywords": ["naruto-online", "flash", "macos", "launcher", "electron", "apple-silicon"],
+  "scripts": {
+    "start": "electron .",
+    "build:helper": "sh scripts/build-helper.sh",
+    "build:icon": "sh scripts/build-icon.sh",
+    "package": "npm run build:helper && sh scripts/package.sh",
+    "dist": "npm run package && sh scripts/make-dmg.sh",
+    "lint": "node --check src/main.js && node --check src/flash-setup.js && node --check src/discord.js && node --check src/config.js"
+  },
+  "dependencies": {
+    "lzma": "2.3.2"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "11.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

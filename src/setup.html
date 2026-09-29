@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src file: data:">
+<title>Shinobi Launcher — First-time setup</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center;
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    background: radial-gradient(circle at 50% 0%, #3a2414 0%, #16110d 60%);
+    color: #f3ece6; -webkit-user-select: none; user-select: none;
+  }
+  main { width: 460px; text-align: center; padding: 8px 24px; }
+  img { width: 96px; height: 96px; }
+  h1 { font-size: 20px; margin: 10px 0 6px; font-weight: 650; }
+  p { margin: 0 0 14px; color: #cbbfb5; }
+  .bar { height: 8px; border-radius: 4px; background: #3a2f27; overflow: hidden; margin: 18px 0 8px; }
+  .fill { height: 100%; width: 0; background: linear-gradient(90deg, #ffa22e, #ff6a13); transition: width .2s; }
+  .fill.busy { width: 35%; animation: slide 1.1s ease-in-out infinite alternate; }
+  @keyframes slide { from { margin-left: 0; } to { margin-left: 65%; } }
+  #status { font-size: 13px; color: #e9ddd3; min-height: 20px; }
+  .note { font-size: 12px; color: #9d9087; margin-top: 18px; }
+  .error { color: #ff8a73; }
+  button {
+    margin-top: 16px; padding: 7px 18px; border-radius: 7px; border: 0; font: inherit; font-weight: 600;
+    background: #ff7a1a; color: #1b120c; cursor: pointer; display: none;
+  }
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.png" alt="">
+  <h1>One-time setup</h1>
+  <p>Naruto Online needs Adobe Flash Player. Shinobi Launcher is now downloading Adobe's official
+     Flash Player 32 for Mac and installing it <b>only inside this launcher</b>. Nothing is installed on your system.</p>
+  <div class="bar"><div class="fill busy" id="fill"></div></div>
+  <div id="status">Starting…</div>
+  <button id="retry" onclick="location.hash = 'retry'">Try again</button>
+  <div class="note">The installer is checked against Adobe's published release and its Adobe digital signature
+     before anything is used. This happens once.</div>
+</main>
+<script>
+  function setStatus(text, progress) {
+    var fill = document.getElementById('fill');
+    document.getElementById('status').textContent = text;
+    document.getElementById('status').className = '';
+    document.getElementById('retry').style.display = 'none';
+    if (progress === null || progress === undefined) { fill.className = 'fill busy'; fill.style.width = ''; }
+    else { fill.className = 'fill'; fill.style.width = Math.round(progress * 100) + '%'; }
+  }
+  function setError(text) {
+    var fill = document.getElementById('fill');
+    fill.className = 'fill'; fill.style.width = '0';
+    document.getElementById('status').textContent = text;
+    document.getElementById('status').className = 'error';
+    document.getElementById('retry').style.display = 'inline-block';
+    location.hash = '';
+  }
+</script>
+</body>
+</html>
